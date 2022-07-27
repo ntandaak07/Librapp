@@ -1,0 +1,199 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <mata name="viewport"></mata>
+    <link rel="stylesheet" href="{% static 'design.css' %}" type="text.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <nav class="top-nav" id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container">
+                <a class="navbar-brand mb-0 h1" href="index">
+                    <img src="{% static 'LIBRappicon.png' %}" alt="" width="30" height="24"> LIBRapp <span>.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Home">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Home">Help</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SIGN IN
+          </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/login">Log in</a></li>
+                                <li><a class="dropdown-item" href="/signup">Sign up</a></li>
+                                <li><a class="dropdown-item" href="/signin">Create New Account</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+<style>
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url("{% static 'hmbg.jpg' %}");
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .nav ul il {
+        position: relative;
+    }
+    
+    .nav ul il::after {
+        content: '';
+        height: 3px;
+        width: 100%;
+        background: turquoise;
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+    }
+    
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50);
+        text-align: center;
+        color: #fff;
+        font-family: sans-serif;
+    }
+    
+    .content h1 {
+        font-size: 70px;
+        margin-top: 80px;
+    }
+    
+    .content p {
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+        text-align: center;
+    }
+    
+    .ok {
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 20px;
+        font-weight: bold;
+        border: 2px solid #005353;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+</style>
+
+</html>
+<i class="bi bi-person-fill"></i>
+
+
+
+
+
+<div class="card bg-dark text-white">
+    <img src="..." class="card-img" alt="...">
+    <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+    </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+    </ul>
+    <div class="card-body">
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+username = request.POST.get('username') fname = request.POST.get('fname') lname = request.POST.get('lname') email= request.POST.get('email') pass1 = request.POST.get('pass1') pass2 = request.POST.get('pass2') myuser = User.objects.create_user(username,
+email, pass1) myuser.first_name = fname myuser.last_name = lname myuser.save() messages.success(request, "Your account has been successfully created!") return redirect('signin') username = request.POST.get('username') fname = request.POST.get('fname')
+lname = request.POST.get('lname') email= request.POST.get('email') pass1 = request.POST.get('pass1') pass2 = request.POST.get('pass2') myuser = User.objects.create_user(username, email, pass1) myuser.first_name = fname myuser.last_name = lname myuser.save()
+messages.success(request, "Your account has been successfully created!") return redirect('signin') if User.objects.filter(username = username).first(): messages.error(request, "This username is already taken") return redirect('home') return render(request,
+'authentication/signup.html')
