@@ -1,0 +1,315 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librapp</title>
+    <mata name="viewport"></mata>
+    <link rel="stylesheet" href="{% static 'design.css' %}" type="text.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <nav class="top-nav" id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container">
+                <a class="navbar-brand mb-0 h1" href="#home">
+                    <img src="{% static 'LIBRappicon.png' %}" alt="" width="30" height="24"> LIBRapp <span>.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#books">Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#help">Help</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sign In
+          </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/student_login">Student Login</a></li>
+                                <li><a class="dropdown-item" href="/admin_login">Admin Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </nav>
+
+</head>
+
+
+<body>
+    <div class="body_content">
+        <section class="adv">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <input type="radio" name="radio-btn" id="radio7">
+
+                    <div class="slide first">
+                        <img src="{% static 'gift.jpg'%}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="slide ">
+                        <img src="{% static 'nour.jpg'%}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="slide ">
+                        <img src="{% static 'chinua.jpg'%}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="slide ">
+                        <img src="{% static 'adv4.jpg'%}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="slide ">
+                        <img src="{% static 'space.jpg'%}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="slide ">
+                        <img src="{% static 'adv9.jpg'%}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="slide ">
+                        <img src="{% static 'adv8.jpg'%}" class="d-block w-100" alt="...">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                        <div class="auto-btn5"></div>
+                        <div class="auto-btn6"></div>
+                        <div class="auto-btn7"></div>
+                    </div>
+
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                    <label for="radio7" class="manual-btn"></label>
+                </div>
+            </div>
+
+        </section>
+        <section class="one">
+            <div id="home" class="content">
+                <h1 class="h">WELCOME TO LIBRapp<span>.</span></h1>
+                <p>Your one stop online book store for every book ever published.</p>
+                <a href="/student_registration" class="btn btn-outline-info btn-lg" role="button"> GET STARTED</a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .slider {
+        width: 100%;
+        height: 40vh;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .slides {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+    }
+    
+    .slides input {
+        display: none;
+    }
+    
+    .slide {
+        width: 100%;
+        transition: 2s;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .navigation-manual {
+        position: absolute;
+        width: 100%;
+        margin-top: -30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .manual-btn {
+        border: 2px solid #0e3133;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .manual-btn:not(:last-child) {
+        margin-right: 40px;
+    }
+    
+    .manual-btn:hover {
+        background: #0e3133;
+    }
+    
+    #radio2:checked~.first {
+        margin-left: -20%;
+    }
+    
+    #radio3:checked~.first {
+        margin-left: -40%;
+    }
+    
+    #radio4:checked~.first {
+        margin-left: -60%;
+    }
+    
+    #radio5:checked~.first {
+        margin-left: -80%;
+    }
+    
+    #radio6:checked~.first {
+        margin-left: -100%;
+    }
+    
+    #radio7:checked~.first {
+        margin-left: -120%;
+    }
+    
+    #radio1:checked~.first {
+        margin-left: 0;
+    }
+    
+    section {
+        height: 100vh;
+        display: flex;
+        scroll-snap-align: start;
+    }
+    
+    .adv {
+        height: 41vh;
+    }
+    
+    .one {
+        height: 80vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.50)),
+        url("{% static 'hmbg.jpg' %} ");
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .body_content {
+        scroll-snap-type: y proximity;
+    }
+    
+    .nav ul il {
+        position: relative;
+    }
+    
+    .nav ul il::after {
+        content: '';
+        height: 3px;
+        width: 100%;
+        background: turquoise;
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+    }
+    
+    .content {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50);
+        text-align: center;
+        color: #fff;
+        font-family: sans-serif;
+    }
+    
+    .h {
+        font-weight: 200px;
+    }
+    
+    .content h1 {
+        font-size: 70px;
+        margin-top: 80px;
+    }
+    
+    .content p {
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+        text-align: center;
+    }
+    
+    .ok {
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 20px;
+        font-weight: bold;
+        border: 2px solid #005353;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .rr {
+        align-content: center;
+        height: 30%;
+        width: 100%;
+        margin-top: 85px;
+        margin-left: 100px;
+        margin-right: 20px;
+    }
+</style>
+
+</html>
